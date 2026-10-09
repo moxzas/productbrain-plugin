@@ -1,0 +1,39 @@
+{
+  "name": "productbrain",
+  "displayName": "ProductBrain",
+  "version": "0.1.0",
+  "description": "Read the product plan before coding and write the job back when it ships. Keeps a four-layer plan (goals, needs, bets, jobs) as PLAN.md in the repo, or synced with ProductBrain over the API, so an agent that starts every session cold has the why to read first. Bootstraps a plan from the repository when none exists.",
+  "author": {
+    "name": "ProductBrain",
+    "url": "https://productbrain.com"
+  },
+  "homepage": "https://github.com/moxzas/productbrain-plugin",
+  "repository": "https://github.com/moxzas/productbrain-plugin",
+  "license": "MIT",
+  "keywords": [
+    "product-plan",
+    "planning",
+    "claude-md",
+    "context",
+    "memory",
+    "productbrain",
+    "agents"
+  ],
+  "documentationUrl": "https://docs.productbrain.com",
+  "supportUrl": "https://productbrain.com",
+  "privacyPolicyUrl": "https://productbrain.com/privacy",
+  "termsOfServiceUrl": "https://productbrain.com/terms",
+  "userConfig": {
+    "PRODUCTBRAIN_API_KEY": {
+      "type": "string",
+      "title": "ProductBrain API key",
+      "description": "Optional. Your pb_ key from the ProductBrain app (Settings, API Keys). Leave empty to keep the plan as PLAN.md in the repo only (no account, no network).",
+      "sensitive": true
+    },
+    "PRODUCTBRAIN_PROJECT_ID": {
+      "type": "string",
+      "title": "ProductBrain project id",
+      "description": "Optional. The project the plan lives in. Tools also accept a projectId argument."
+    }
+  }
+}

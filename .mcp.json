@@ -1,0 +1,13 @@
+{
+  "productbrain": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@productbrain-com/mcp@0.1.0"
+    ],
+    "env": {
+      "PRODUCTBRAIN_API_KEY": "${user_config.PRODUCTBRAIN_API_KEY}",
+      "PRODUCTBRAIN_PROJECT_ID": "${user_config.PRODUCTBRAIN_PROJECT_ID}"
+    }
+  }
+}

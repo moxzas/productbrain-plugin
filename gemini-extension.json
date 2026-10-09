@@ -1,0 +1,28 @@
+{
+  "name": "productbrain",
+  "version": "0.1.0",
+  "description": "Read the product plan before coding and write the job back when it ships: goals, needs, bets and jobs in ProductBrain, from Gemini CLI.",
+  "settings": [
+    {
+      "name": "ProductBrain API key",
+      "description": "Your pb_ key from the ProductBrain app (Settings, API Keys).",
+      "envVar": "PRODUCTBRAIN_API_KEY",
+      "sensitive": true
+    },
+    {
+      "name": "ProductBrain project id",
+      "description": "Optional default project; tools also accept a projectId argument.",
+      "envVar": "PRODUCTBRAIN_PROJECT_ID",
+      "sensitive": false
+    }
+  ],
+  "mcpServers": {
+    "productbrain": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@productbrain-com/mcp@0.1.0"
+      ]
+    }
+  }
+}
